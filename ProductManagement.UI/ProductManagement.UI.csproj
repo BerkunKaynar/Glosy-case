@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ProductManagement.API\ProductManagement.API.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ProductManagement.Entities">
+      <HintPath>..\ProductManagement.Entities\bin\Debug\net6.0\ProductManagement.Entities.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
